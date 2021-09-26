@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".Medical_center">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+
+        android:gravity="center"
+        android:text="대상자 확인  > 예약 대상자 구분  >  의료기관 선택"
+        android:textSize="19dp"
+        android:textColor="@color/white"
+        android:background="@color/purple_700"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="의료기관 선택"
+        android:textSize="30dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Spinner
+            android:id="@+id/spinnersido"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:spinnerMode="dialog"
+            android:prompt="@+id/spinner_prompt"
+            />
+        <Spinner
+            android:id="@+id/spinnersigungu"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:spinnerMode="dialog"
+            android:prompt="@+id/spinner_prompt"/>
+        <Spinner
+            android:id="@+id/center_name"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:spinnerMode="dialog"
+            android:prompt="@+id/spinner_prompt"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/mapview"
+
+        android:background="@color/white"
+        android:text="지도에서 보기"
+        android:textSize="18dp"
+        android:textStyle="bold"
+
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/finish"
+
+        android:background="@color/white"
+        android:text="예약 완료하기"
+        android:textSize="18dp"
+        android:textStyle="bold"
+
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+
+</LinearLayout>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".EditInfo">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="개인정보확인"
+        android:textSize="30dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="이름"
+            android:textSize="20dp"
+            android:textColor="#717171"
+            android:textStyle="bold"/>
+
+
+        <EditText
+            android:id="@+id/name_f"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="전화번호"
+            android:textSize="20dp"
+            android:textColor="#717171"
+            android:textStyle="bold"/>
+
+
+        <EditText
+            android:id="@+id/phone_f"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="주민등록번호"
+            android:textSize="20dp"
+            android:textColor="#717171"
+            android:textStyle="bold"/>
+
+
+        <EditText
+            android:id="@+id/resident_number_f"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="의료기관정보"
+            android:textSize="20dp"
+            android:textColor="#717171"
+            android:textStyle="bold"/>
+
+
+        <EditText
+            android:id="@+id/medical_center_name_f"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="주소"
+            android:textSize="20dp"
+            android:textColor="#717171"
+            android:textStyle="bold"/>
+
+
+        <EditText
+            android:id="@+id/center_address_f"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="백신정보"
+            android:textSize="20dp"
+            android:textColor="#717171"
+            android:textStyle="bold"/>
+
+
+        <EditText
+            android:id="@+id/vaccine_f"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/next_f"
+
+        android:background="@color/white"
+        android:text="다음으로"
+        android:textSize="18dp"
+        android:textStyle="bold"
+
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+
+</LinearLayout>

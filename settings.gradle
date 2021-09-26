@@ -1,0 +1,4 @@
+rootProject.name = "My Application"
+include ':app'
+include ':project'
+include ':project_reser'
