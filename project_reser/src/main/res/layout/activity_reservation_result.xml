@@ -26,6 +26,7 @@
 
 
         <TextView
+            android:text=""
             android:id="@+id/name_result"
             android:layout_width="match_parent"
             android:layout_height="50dp" />
@@ -45,6 +46,7 @@
 
 
         <TextView
+            android:text=""
             android:id="@+id/phone_result"
             android:layout_width="match_parent"
             android:layout_height="50dp" />
@@ -64,7 +66,23 @@
 
 
         <TextView
+            android:text=""
             android:id="@+id/resident_number_result"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="의료기관 이름"
+            android:textSize="20dp"
+            android:textColor="#717171"
+            android:textStyle="bold"/>
+
+
+        <TextView
+            android:text=""
+            android:id="@+id/center_name_result"
             android:layout_width="match_parent"
             android:layout_height="50dp" />
 
@@ -78,21 +96,8 @@
 
 
         <TextView
-            android:id="@+id/center_address"
-            android:layout_width="match_parent"
-            android:layout_height="50dp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="의료기관 전화번호"
-            android:textSize="20dp"
-            android:textColor="#717171"
-            android:textStyle="bold"/>
-
-
-        <TextView
-            android:id="@+id/center_phone"
+            android:text=""
+            android:id="@+id/center_address_result"
             android:layout_width="match_parent"
             android:layout_height="50dp" />
 
@@ -106,7 +111,8 @@
 
 
         <TextView
-            android:id="@+id/anti_virus_info"
+            android:text=""
+            android:id="@+id/anti_virus_info_result"
             android:layout_width="match_parent"
             android:layout_height="50dp" />
 

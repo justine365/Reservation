@@ -11,7 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
-        android:text="개인정보확인"
+        android:text="개인정보 확인/수정"
         android:textSize="30dp"
         android:textColor="@color/black"
         android:textStyle="bold"/>
@@ -30,6 +30,7 @@
 
         <EditText
             android:id="@+id/name_f"
+            android:text=""
             android:layout_width="match_parent"
             android:layout_height="50dp" />
 
@@ -48,6 +49,7 @@
 
 
         <EditText
+            android:text=""
             android:id="@+id/phone_f"
             android:layout_width="match_parent"
             android:layout_height="50dp" />
@@ -67,6 +69,7 @@
 
 
         <EditText
+            android:text=""
             android:id="@+id/resident_number_f"
             android:layout_width="match_parent"
             android:layout_height="50dp" />
@@ -80,6 +83,7 @@
 
 
         <EditText
+            android:text=""
             android:id="@+id/medical_center_name_f"
             android:layout_width="match_parent"
             android:layout_height="50dp" />
@@ -94,6 +98,7 @@
 
 
         <EditText
+            android:text=""
             android:id="@+id/center_address_f"
             android:layout_width="match_parent"
             android:layout_height="50dp" />
@@ -109,6 +114,7 @@
 
 
         <EditText
+            android:text=""
             android:id="@+id/vaccine_f"
             android:layout_width="match_parent"
             android:layout_height="50dp" />

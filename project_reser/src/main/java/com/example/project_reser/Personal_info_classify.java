@@ -27,16 +27,18 @@ public class Personal_info_classify extends AppCompatActivity implements View.On
 
     @Override
     public void onClick(View v) {
-        SharedPreferences sharedPref = getSharedPreferences("anti_virus_pref", Context.MODE_PRIVATE);
-        SharedPreferences.Editor editor =  sharedPref.edit();
+        SharedPreferences sharedPrefer = getSharedPreferences("anti_virus_pref", Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor2 =  sharedPrefer.edit();
 
         if(Pfizer.isChecked())
         {
-            editor.putInt("prfizer",1);
+            editor2.putString("data","Prifizer");
+            editor2.commit();
         }
         else if(Moderna.isChecked())
         {
-            editor.putInt("moderna",1);
+            editor2.putString("data","Moderna");
+            editor2.commit();
         }
 
         Intent next_ = new Intent(this,Medical_center.class);

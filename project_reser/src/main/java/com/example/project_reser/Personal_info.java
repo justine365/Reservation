@@ -44,7 +44,7 @@ public class Personal_info extends AppCompatActivity implements View.OnClickList
         editor.putString("namedata",name);
         editor.putString("phonedata",phone);
         editor.putString("residentdata",residentnumber);
-        String getphone = sharedPref.getString("phonedata","");
+        editor.commit();
 
 
 

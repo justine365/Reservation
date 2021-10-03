@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -27,12 +28,16 @@ public class Medical_center extends AppCompatActivity implements View.OnClickLis
 
     private String API_KEY="S3JAidrdNoyZufh0wx8wwiDbDXY8IjFr7i5FX6QwdOkGTbZij89rBh1zG35HW9qhlWnmP6NahnOQ11zwEqycZA==";
     Button Map_View;
+    Button Complete;
     private RecyclerView recyclerView;
     private RecyclerView.Adapter mAdapter;
     private RetrofitClient retrofitClient;
     private RetrofitInterface retrofitInterface;
     public ArrayList<String> Address = new ArrayList<>();
     public ArrayList<String> PhoneNumber = new ArrayList<>();
+    String CenterName;
+    String Addresssido;
+    String Addresssigungu;
 
     Spinner spinnerSido;
     Spinner spinnerSigungu;
@@ -46,6 +51,8 @@ public class Medical_center extends AppCompatActivity implements View.OnClickLis
         setContentView(R.layout.medical_center);
         Map_View = findViewById(R.id.mapview);
         Map_View.setOnClickListener(this);
+        Complete = findViewById(R.id.finish);
+        Complete.setOnClickListener(this);
         spinnerSido=findViewById(R.id.spinnersido);
         spinnerSigungu=findViewById(R.id.spinnersigungu);
         spinnerCentername=findViewById(R.id.center_name);
@@ -78,8 +85,29 @@ public class Medical_center extends AppCompatActivity implements View.OnClickLis
     }
     @Override
     public void onClick(View v) {
-        Intent mv = new Intent(this,Map.class);
-        startActivity(mv);
+        if(v==Complete)
+        {
+            spinnerSido.getSelectedItem().toString();
+            /*Toast.makeText(getApplicationContext(),spinnerSido.getSelectedItem().toString(),Toast.LENGTH_SHORT).show();*/
+            Intent aa = new Intent(this,EditInfo.class);
+            startActivity(aa);
+
+
+
+
+            SharedPreferences sharedPref = getSharedPreferences("personal_info_pref", Context.MODE_PRIVATE);
+            SharedPreferences.Editor editor =  sharedPref.edit();
+            editor.putString("centername",spinnerCentername.getSelectedItem().toString());
+            editor.putString("sido",spinnerSido.getSelectedItem().toString());
+            editor.putString("sigungu",spinnerSigungu.getSelectedItem().toString());
+            editor.commit();
+        }
+        if(v==Map_View)
+        {
+            Intent mv = new Intent(this,Map.class);
+            startActivity(mv);
+        }
+
 
     }
 
@@ -146,6 +174,7 @@ public class Medical_center extends AppCompatActivity implements View.OnClickLis
                         {
                             if(spinnerSigungu.getSelectedItem().toString().equals(strings_sigungu[i]))
                             {
+                                CenterName=list.get(i).getCenterName();
                                 arrayList.add(list.get(i).getCenterName());
                                 Address.add(list.get(i).getAddress());
                                 PhoneNumber.add(list.get(i).getAddress());
