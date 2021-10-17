@@ -34,18 +34,26 @@
             android:textColor="#717171"
             android:textStyle="bold"/>
 
-        <RadioButton
-            android:id="@+id/pfizer"
+        <RadioGroup
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="화이자"
-            android:checked="false"/>
+            android:layout_height="wrap_content">
 
-        <RadioButton
-            android:id="@+id/moderna"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="모더나"/>
+            <RadioButton
+                android:id="@+id/pfizer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="화이자"
+                android:checked="false"/>
+
+            <RadioButton
+                android:id="@+id/moderna"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="모더나"/>
+
+        </RadioGroup>
+
+
     </LinearLayout>
     <Button
         android:id="@+id/next_2"

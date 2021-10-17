@@ -14,7 +14,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     Button Reser;
 
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,13 +23,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Reser.setOnClickListener(this);
 
 
-
     }
 
     @Override
     public void onClick(View v) {
 
-        Intent reser = new Intent(this,Personal_info.class);
+        Intent reser = new Intent(this, Personal_info.class);
         startActivity(reser);
     }
 }
