@@ -57,6 +57,11 @@ Link: [백신API][link]
 
 -Google map API
 
+Link: [구글 맵 API][link]
+
+[link]:https://cloud.google.com/maps-platform/pricing?hl=ko "Go API"
+
+
 주요기능
 --------------
 
