@@ -61,15 +61,16 @@
 
 ### 2.본인확인
 
-<img src="https://user-images.githubusercontent.com/83526407/138582174-b3bed001-2d10-4065-9278-f4e1f9c5fb51.jpg" width="20%" height="10%" title="" ></img>
+<img src="https://user-images.githubusercontent.com/83526407/138582227-33e5d5e0-b55d-44d0-8bcf-7f0263c7818f.jpg" width="20%" height="10%" title="" ></img>
 
 백신 신청을 위해 이름, 전화번호, 주민등록번호를 제공받고 저장합니다.
 
 입력된 이름/전화번호/주민등록번호를 저장하고 입력되지 않았을경우에는 토스트 메세지와 함께 다음페이지로 넘어가지 못합니다
 
+<img src="https://user-images.githubusercontent.com/83526407/138582174-b3bed001-2d10-4065-9278-f4e1f9c5fb51.jpg" width="20%" height="10%" title="" ></img>
 <img src="https://user-images.githubusercontent.com/83526407/138582202-f2416768-c5da-48e0-ade7-69458e6c6218.jpg" width="20%" height="10%" title="" ></img>
 <img src="https://user-images.githubusercontent.com/83526407/138582212-cdc27b2d-7670-4247-ac8c-63e4b2b29a1b.jpg" width="20%" height="10%" title="" ></img>
-<img src="https://user-images.githubusercontent.com/83526407/138582227-33e5d5e0-b55d-44d0-8bcf-7f0263c7818f.jpg" width="20%" height="10%" title="" ></img>
+
 
 ### 3.백신선택
 
@@ -87,20 +88,17 @@
 
 의료기관 선택 페이지입니다 정부에서 제공하는 공공데이터 API를 사용하여 스피너에 시도/시군구/센터이름으로 나누어 시도를 선택하면 시도 안에있는 센터들의 시군구가 다음 스피너에 나오고 시군구를 선택하면 시도 시군구 내부의 센터이름이 나옵니다.
 
-<img src="" width="20%" height="10%" title="" ></img>
+<img src="https://user-images.githubusercontent.com/83526407/138582666-ad073b78-645b-47ba-9480-0d9d4aa86314.jpg" width="20%" height="10%" title="" ></img>
 
 시도 선택페이지 입니다.
 
-<img src="" width="20%" height="10%" title="" ></img>
+<img src="https://user-images.githubusercontent.com/83526407/138582669-77e74c5e-a210-48b5-97cf-9468c9061332.jpg" width="20%" height="10%" title="" ></img>
 
 시도에 속하는 시군구들의 선택페이지 입니다
 
-<img src="" width="20%" height="10%" title="" ></img>
+<img src="https://user-images.githubusercontent.com/83526407/138582675-9e69929c-3935-4b81-884b-3355b275caba.jpg" width="20%" height="10%" title="" ></img>
 
-시도,시군구들에 속하는 센들입니다.
-
-<img src="" width="20%" height="10%" title="" ></img>
-
+시도,시군구들에 속하는 센터들입니다.
 
 ### 5.구글 지도
 
@@ -108,9 +106,9 @@
 <img src="https://user-images.githubusercontent.com/83526407/138582395-6686b29e-72aa-4d43-ae95-b1be2dacb918.jpg" width="20%" height="10%" title="" ></img>
 
 
-마지막으로 선택한 시도/시군귀센터이름의 위도,경도의 API를 저장하여 구글지도에서 위치를 확인할 수 있습니다.
+마지막으로 선택한 시도/시군구/센터이름의 위도,경도의 API를 저장하여 구글지도에서 위치를 확인할 수 있습니다.
 
-<img src="" width="20%" height="10%" title="" ></img>
+<img src="https://user-images.githubusercontent.com/83526407/138582712-868f2733-6891-4d6e-9739-68e9bb58bccd.jpg" width="20%" height="10%" title="" ></img>
 
 구글 맵 요청전에 권한승인을 받습니다.
 
