@@ -128,7 +128,7 @@
 
 <img src="https://user-images.githubusercontent.com/83526407/138582407-6f4bf251-79b1-4e1c-acf2-fc23f897e35e.jpg" width="20%" height="10%" title="" ></img>
 
-예약정보를 확인하는 페이지로 넘어가고 EditText이기 때문에 예약정보를 수정할 수 있고 수정된 정보는 저장됩니다.
+예약정보를 수정할 수 있고 수정된 정보는 저장됩니다.
 
 <img src="https://user-images.githubusercontent.com/83526407/138582421-329eae55-cb6c-4efe-ad81-2db919be8932.jpg" width="20%" height="10%" title="" ></img>
 
